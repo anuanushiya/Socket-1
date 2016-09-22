@@ -9,7 +9,8 @@ ini_set('display_errors','on');
 
 $address = 'localhost';
 $port = 9080;
-$input = array_slice($argv, 1);
+$authors = array( "Steinbeck","Kafka", "Tolkien", "Dickens" );
+$input = array_slice($authors, 1);
 if(empty($input)){
   echo "please pass in some arguments to send to the server", PHP_EOL;
   echo "example: php ".basename(__FILE__).' "this is some input"', PHP_EOL;
